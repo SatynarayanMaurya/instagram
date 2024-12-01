@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background-color: black;
+  color: white;
+}
+
+
+.hide_block_element {
+  display: none; 
+}
+
+
+@media (min-width: 1024px) {
+  .hide_block_element {
+      display: block; 
+  }
+}
+.block_hide_element {
+  display: block; 
+}
+
+@media (min-width: 1024px) {
+  .block_hide_element {
+      display: none; 
+  }
+}
+
+.hide_flex_element {
+  display: none; 
+}
+
+@media (min-width: 1024px) {
+  .hide_flex_element {
+      display: flex; 
+  }
+}
+
+@media (max-width: 639px) {
+  /* Apply CSS only to screens smaller than 640px */
+  .scroll_story {
+    width: 350px;
+    overflow-x:auto;
+  }
+}
+@media (min-width: 639px) {
+  /* Apply CSS only to screens smaller than 640px */
+  .scroll_story {
+    width: 350px;
+    overflow-x:auto;
+  }
+}
+.hide_scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
