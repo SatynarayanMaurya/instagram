@@ -1,5 +1,6 @@
 // const BASE_URL = "http://localhost:4000"
-const BASE_URL = "http://192.168.1.4:4000"
+// const BASE_URL = "http://192.168.1.4:4000"
+const BASE_URL = "https://instagram-backend-lo48.onrender.com"
 
 
 export const authEndpoints = {
