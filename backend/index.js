@@ -19,7 +19,7 @@ app.use(fileUpload({
 }));
 app.use(express.json())
 const options = {
-    origin:"http://localhost:3000" || "http://192.168.137.1:3000",
+    origin:"http://localhost:3000" || "http://192.168.137.1:3000" || "instagram-umber-psi.vercel.app",
     credential:true
 }
 app.use(cors())
